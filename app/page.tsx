@@ -12,7 +12,9 @@ export default function Page() {
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-          <p className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className}`}>
+          <p
+            className={`text-xl text-gray-800 md:text-3xl md:leading-normal ${lusitana.className}`}
+          >
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
@@ -28,8 +30,20 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
-          <Image className='hidden md:block' src="/hero-desktop.png" height={760} width={1000} alt='Desktop image of the website'/>
-          <Image className='block md:hidden' src="/hero-mobile.png" height={620} width={560} alt='Mobile screenshot of the website'/>
+          <Image
+            className="hidden md:block"
+            src="/hero-desktop.png"
+            height={760}
+            width={1000}
+            alt="Desktop image of the website"
+          />
+          <Image
+            className="block md:hidden"
+            src="/hero-mobile.png"
+            height={620}
+            width={560}
+            alt="Mobile screenshot of the website"
+          />
         </div>
       </div>
     </main>
